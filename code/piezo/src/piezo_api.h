@@ -200,7 +200,7 @@ void Piezo::begin(uint8_t cs, uint8_t clr, uint8_t ldac){
     regWrite(PIEZO, 0x00);
 
     //analogReference(INTERNAL);  // set analog reference to internal ref
-    analogReference(INTERNAL);
+    analogReference(EXTERNAL);
     analogReadRes(16);          // Teensy 3.0: set ADC resolution to this many bits
     //analogReadResolution(16);
 
